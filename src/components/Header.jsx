@@ -4,7 +4,6 @@ import "../styles/Header.css";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Close mobile menu on window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768 && menuOpen) {
@@ -18,7 +17,7 @@ const Header = () => {
   return (
     <nav className="navbar-container">
       <div className="navbar-content">
-        {/* Logo Section */}
+        {/* Logo */}
         <div className="navbar-logo">
           <img src="/images/famicons_rocket.png" alt="logo" className="logo-img" />
           <span className="logo-text">
@@ -26,7 +25,7 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Desktop Links */}
+        {/* Desktop Nav */}
         <ul className="nav-links">
           <li>How It Works</li>
           <li>Our Approach</li>
@@ -35,18 +34,23 @@ const Header = () => {
           <li>Pricing</li>
         </ul>
 
-        {/* Desktop Button */}
+        {/* Contact Us Button */}
         <div className="nav-btn">
-          <button>Contact Us</button>
+          <button className="contact-btn">Contact Us</button>
         </div>
 
-        {/* Hamburger Icon (mobile only) */}
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
+        {/* Hamburger Menu */}
+        <div
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <div className="bar top"></div>
+          <div className="bar middle"></div>
+          <div className="bar bottom"></div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="mobile-menu">
           <ul>

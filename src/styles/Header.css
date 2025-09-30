@@ -1,61 +1,49 @@
-/* Container */
+/* NAVBAR CONTAINER */
 .navbar-container {
-  width: 100%;             
-  /* max-width: 1440px;         */
+ 
+
+opacity: 1;
+
+  /* width: 100%; */
+   width: 1440;
   height: 91px;
   background: #F3F7F8;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  opacity: 1;
   z-index: 50;
   display: flex;
-  justify-content: center; /* center content */
+  justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 
-/* Content Row */
+/* NAVBAR CONTENT */
 .navbar-content {
-  max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 45px;
-  top: 18px;
-  left: 80px;
+  max-width: 1280px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo */
+/* LOGO */
 .navbar-logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 172;
-  height: 28;
-  top: 27px;
-  left: 139px;
-  opacity: 1;
-
 }
 
 .logo-img {
-  width: 46;
-height: 42;
-top: 18px;
-left: 80px;
-opacity: 1;
-border-radius: 9px;
-
-background: #FFFFFF;
-box-shadow: 0px 0px 17px 0px #BAC0FF40 inset;
-
-box-shadow: 0px 2px 11px 0px #00000040;
-
-
+  width: 46px;
+  height: 42px;
+  border-radius: 9px;
+  background: #ffffff;
+  box-shadow:
+    inset 0px 0px 17px #bac0ff40,
+    0px 2px 11px #00000040;
 }
 
 .logo-text {
@@ -63,8 +51,7 @@ box-shadow: 0px 2px 11px 0px #00000040;
   font-size: 22px;
   font-weight: 600;
   color: #111827;
-  line-height: 100% ;
-  letter-spacing: 0%;
+  line-height: 100%;
 }
 
 .logo-highlight {
@@ -73,17 +60,16 @@ box-shadow: 0px 2px 11px 0px #00000040;
   -webkit-text-fill-color: transparent;
 }
 
-/* Nav Links (Desktop) */
+/* NAV LINKS */
 .nav-links {
   display: flex;
   gap: 32px;
   list-style: none;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 15px;       /* from figma */
-  font-weight: 600;      /* SemiBold */
-  line-height: 100%;     /* from figma */
-  letter-spacing: 0;     /* from figma */
-  color: #1F1F1F;        /* from figma */
+  font-size: 15px;
+  font-weight: 600;
+  color: #1F1F1F;
+  margin-left: auto;
 }
 
 .nav-links li {
@@ -92,34 +78,69 @@ box-shadow: 0px 2px 11px 0px #00000040;
 }
 
 .nav-links li:hover {
-  color: #2563EB; /* hover effect */
+  color: #2563EB;
 }
 
-/* CTA Button (Desktop) */
-.nav-btn button {
-  padding: 10px 24px;
-  border-radius: 9999px;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-  background: linear-gradient(90deg, #2563EB, #06B6D4);
+/* CONTACT US */
+.contact-btn {
+  width: 139px;
+  height: 44px;
+  border-radius: 31px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(357.62deg, #0F93FF 2.16%, #003BB9 145.02%);
+  border: 0px solid transparent;
+  border-image: linear-gradient(90deg, #9CC6FF 0%, #00D0FF 100%);
+  border-image-slice: 1;
+  box-shadow:
+    0px 2px 4px 0px #1E71E526,
+    0px 7px 7px 0px #1E71E521,
+    0px 17px 10px 0px #1E71E514,
+    0px 30px 12px 0px #1E71E505,
+    0px 46px 13px 0px #1E71E500;
   cursor: pointer;
   transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px; /* consistent spacing with nav links */
 }
 
-.nav-btn button:hover {
+.contact-btn:hover {
   opacity: 0.9;
 }
 
-/* Hamburger (Mobile) */
+/* HAMBURGER */
 .hamburger {
   display: none;
-  font-size: 28px;
+  flex-direction: column;
+  gap: 4px;
   cursor: pointer;
 }
 
-/* Mobile Menu */
+.bar {
+  width: 24px;
+  height: 3px;
+  background: #111827;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .top {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open .middle {
+  opacity: 0;
+}
+
+.hamburger.open .bottom {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* MOBILE MENU */
 .mobile-menu {
   width: 100%;
   background: #F3F7F8;
@@ -128,10 +149,10 @@ box-shadow: 0px 2px 11px 0px #00000040;
   flex-direction: column;
   gap: 16px;
   animation: fadeIn 0.3s ease;
-  position: absolute;    
-  top: 91px;               
+  position: absolute;
+  top: 91px;
   left: 0;
-  z-index: 40;   
+  z-index: 40;
 }
 
 .mobile-menu ul {
@@ -170,8 +191,19 @@ box-shadow: 0px 2px 11px 0px #00000040;
   opacity: 0.9;
 }
 
+/* FADE IN ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* Responsive Rules */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links,
   .nav-btn {
@@ -179,7 +211,6 @@ box-shadow: 0px 2px 11px 0px #00000040;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
   }
 }
-
