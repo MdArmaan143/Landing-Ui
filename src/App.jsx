@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from './components/Header'
-import HeroSection from './components/herosection';
+import HeroSection from './components/Herosection';
 import Impact from './components/Impact';
 import './App.css';
 
