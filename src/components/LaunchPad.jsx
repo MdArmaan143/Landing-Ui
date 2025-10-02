@@ -6,7 +6,7 @@ const LaunchPad = () => {
   return (
     <section className="launchpad-container">
      {/* Pill */}
-     <div className="impact-pilll">
+     <div className="impact-pills">
         <div className="pill-innerr">
           <span className="dott"></span>
           <span className="pill-textt">Why LaunchPad Labs</span>
