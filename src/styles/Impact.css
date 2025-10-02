@@ -1,0 +1,103 @@
+.impact-section {
+    background: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  /* Pill */
+  .impact-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  
+    width: 151px;                 /* fixed width to match design */
+    height: 44px;                 /* fixed height to match design */
+  
+    background: #ffffff;          /* white inside */
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-clip: padding-box;
+  
+    /* gradient border */
+    border-image: linear-gradient(90deg, #CEE3FF 0%, #C5F4FF 100%);
+    border-image-slice: 1;
+  
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+  
+    margin-bottom: 24px;
+  }
+  
+  .impact-pill .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0764da 0%, #3c8cfa 100%);
+  }
+  
+  /* Heading */
+  .impact-heading {
+    font-weight: 600;
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 60px;
+  }
+  
+  /* Stats row */
+  .impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Each card */
+  .stat-card {
+    background: #f9fafb;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    width: 200px;
+    padding: 36px 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .stat-value {
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    background: linear-gradient(90deg, #0764da 0%, #3c8cfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+  }
+  
+  .stat-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #475569;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .impact-heading {
+      font-size: 24px;
+    }
+    .stat-card {
+      width: 160px;
+      padding: 28px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .impact-heading {
+      font-size: 20px;
+    }
+    .impact-stats {
+      gap: 20px;
+    }
+  }
+  

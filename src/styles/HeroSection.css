@@ -1,0 +1,175 @@
+.hero-container {
+    width: 100%;
+    background: #f3f7f8;
+    text-align: center;
+    padding-top: 120px;       /* space below navbar */
+    padding-bottom: 140px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Background full-height lines */
+  .line-left-bg,
+  .line-right-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .line-left-bg { left: 0; }
+  .line-right-bg { right: 0; }
+  
+  /* Floating side icons */
+  .side-icon {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    z-index: 1;
+  }
+  .icon-left-top   { top: 200px; left: 120px; }
+  .icon-left-bottom{ bottom: 220px; left: 150px; }
+  .icon-right-top  { top: 200px; right: 140px; }
+  .icon-right-bottom{ bottom: 220px; right: 150px; }
+  
+  /* Pill above heading */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* padding: 6px 18px; */
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 2;
+  }
+  .pill-avatars { height: 26px; }
+  
+  /* Heading */
+  .hero-heading {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-heading .highlight { color: #0764da; }
+  
+  /* Sub text */
+  .hero-subtext {
+    max-width: 700px;
+    margin: 0 auto 70px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #475569;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Calendar + Timer cards */
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 120px;
+    position: relative;
+    z-index: 2;
+  }
+  .card-img {
+    width: 270px;      /* same width for both cards */
+    height: 280px;     /* same height */
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  
+  /* Book A Call button */
+  .book-btn {
+    position: absolute;
+    top: -28px;         /* floats just above cards */
+    right: 50%;
+    transform: translateX(50%);
+    padding: 12px 28px 12px 22px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background: linear-gradient(90deg, #0764da 0%, #3c8cfa 100%);
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  .btn-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Trusted by section */
+  .trusted-section {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .trusted-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 24px;
+  }
+  
+  /* Bottom lines coming from pill */
+  .bottom-line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .bottom-left  { left: 0; }
+  .bottom-right { right: 0; }
+  
+  .trusted-logos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .trusted-logos img {
+    height: 28px;
+    opacity: 0.8;
+    filter: grayscale(40%);
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero-heading { font-size: 40px; }
+    .card-img { width: 240px; height: 260px; }
+  }
+  @media (max-width: 768px) {
+    .hero-heading { font-size: 32px; }
+    .cards-wrapper { flex-direction: column; gap: 24px; }
+    .book-btn { position: static; transform: none; margin-bottom: 20px; }
+    .side-icon { display: none; }
+  }
+  @media (max-width: 480px) {
+    .hero-heading { font-size: 26px; }
+    .book-btn { font-size: 14px; padding: 8px 18px; }
+  }
+  
