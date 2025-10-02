@@ -1,0 +1,216 @@
+/* ============ Base Styles ============ */
+.launchpad-container {
+    max-width: 1440px;
+    width: 100%;
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 85px 20px;       /* side padding for small screens */
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  
+  /* Badge Container */
+  .impact-pilll {
+    width: 212px;
+    height: 44px;
+    border-radius: 31px;
+    
+    background: #f2f2f2;
+    margin: 0 auto 24px auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-image: linear-gradient(90deg, #cee3ff 0%, #c5f4ff 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+  }
+  
+  .pill-innerr {
+    width: 204px;
+    height: 36px;
+    border-radius: 83px;
+    background: #ffffff;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dott {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0764daa8;
+  }
+  
+  .pill-textt {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 100%;
+  }
+  
+  
+  /* Headings */
+  .launchpad-heading {
+    max-width: 90%;
+    margin: 72px auto 20px auto;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    color: #202020;
+  }
+  
+  .launchpad-desc {
+    max-width: 777px;
+    margin: 0 auto 60px auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #525252;
+    padding: 0 15px;
+  }
+  
+  /* ============ Cards ============ */
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;              /* wrap cards on smaller screens */
+  }
+  
+  .card {
+    flex: 1 1 300px;               /* shrink or grow as needed */
+    max-width: 381px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 2px 21px 0px #0000001a;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;           /* spacing between wrapped cards */
+  }
+  
+  .card-img {
+    width: 100%;
+    max-width: 364px;
+    height: 261px;
+    border-radius: 10px;
+    background: linear-gradient(210.09deg, #eff5ff 83.27%, #ffffff 93.9%);
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .img1 {
+    background-image: url("/images/Frame 633.png");
+  }
+  
+  .img2 {
+    background-image: url("/images/Frame 634.png");
+  }
+  
+  .img3 {
+    background-image: url("/images/Frame 635.png");
+  }
+  
+  .card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #404040;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .card-text {
+    max-width: 90%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    color: #474545;
+  }
+  
+  /* ============ Responsive Breakpoints ============ */
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+    .launchpad-heading {
+      font-size: 26px;
+    }
+    .launchpad-desc {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobiles (<=768px) */
+  @media (max-width: 768px) {
+    .launchpad-container {
+      padding: 60px 15px;
+    }
+  
+    .badge-container {
+      height: 40px;
+    }
+  
+    .badge-text {
+      font-size: 13px;
+    }
+  
+    .launchpad-heading {
+      font-size: 24px;
+      margin-top: 50px;
+    }
+  
+    .launchpad-desc {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    .card-wrapper {
+      gap: 20px;
+    }
+  
+    .card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .card-img {
+      height: 220px;
+    }
+  }
+  
+  /* Small Phones (<=480px) */
+  @media (max-width: 480px) {
+    .badge-dot {
+      left: 18px;
+    }
+  
+    .badge-text {
+      font-size: 12px;
+    }
+  
+    .launchpad-heading {
+      font-size: 20px;
+    }
+  
+    .launchpad-desc {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  
+    .card-img {
+      height: 200px;
+    }
+  }
+  

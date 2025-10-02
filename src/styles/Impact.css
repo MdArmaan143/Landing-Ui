@@ -1,103 +1,164 @@
+/* =============================
+   Main Section
+============================= */
 .impact-section {
-    background: #ffffff;
-    text-align: center;
-    padding: 100px 20px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-  }
+  background: #ffffff;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+}
+
+/* =============================
+   Pill
+============================= */
+.impact-pill {
+  width: 151px;
+  height: 44px;
+  border-radius: 31px;
   
-  /* Pill */
-  .impact-pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  
-    width: 151px;                 /* fixed width to match design */
-    height: 44px;                 /* fixed height to match design */
-  
-    background: #ffffff;          /* white inside */
-    border: 1px solid transparent;
-    border-radius: 50%;
-    background-clip: padding-box;
-  
-    /* gradient border */
-    border-image: linear-gradient(90deg, #CEE3FF 0%, #C5F4FF 100%);
-    border-image-slice: 1;
-  
-    font-size: 14px;
-    font-weight: 500;
-    color: #475569;
-  
-    margin-bottom: 24px;
-  }
-  
-  .impact-pill .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, #0764da 0%, #3c8cfa 100%);
-  }
-  
-  /* Heading */
+  background: #f2f2f2;
+  margin: 0 auto 24px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-image: linear-gradient(90deg, #cee3ff 0%, #c5f4ff 100%);
+  border-image-slice: 1;
+  box-sizing: border-box;
+}
+
+.pill-inner {
+  width: 143px;
+  height: 36px;
+  border-radius: 83px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0764daa8;
+}
+
+.pill-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 100%;
+}
+
+/* =============================
+   Heading
+============================= */
+.impact-heading {
+  font-weight: 600;
+  font-size: 24px;
+  color: #202020;
+  line-height: 31px;
+  width: 725px;
+  margin: 24px auto 60px auto;
+}
+
+/* =============================
+   Stats Row
+============================= */
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* =============================
+   Stat Cards
+============================= */
+.stat-card {
+  height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    270.05deg,
+    #ffffff 35.41%,
+    #b8dcff 132.44%
+  );
+
+  border: 1px dashed #afcafd;       /* dashed border */
+  border-radius: 23px;              /* rounded corners */
+}
+
+/* Width for each card */
+.first-card {
+  width: 320px;
+}
+
+.second-card {
+  width: 298px;
+}
+
+.third-card {
+  width: 274px;
+}
+
+/* =============================
+   Text inside Cards
+============================= */
+.stat-value {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  background: linear-gradient(90deg, #0766db 0%, #3c8cfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.stat-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  color: #505050;
+  text-align: center;
+}
+
+/* =============================
+   Responsive
+============================= */
+@media (max-width: 1024px) {
   .impact-heading {
-    font-weight: 600;
-    font-size: 28px;
-    color: #1e293b;
-    margin-bottom: 60px;
+    width: 90%;
   }
-  
-  /* Stats row */
-  .impact-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+  .first-card,
+  .second-card,
+  .third-card {
+    width: 280px;
   }
-  
-  /* Each card */
+}
+
+@media (max-width: 768px) {
+  .impact-heading {
+    font-size: 20px;
+  }
   .stat-card {
-    background: #f9fafb;
-    border: 1px dashed #cbd5e1;
-    border-radius: 12px;
-    width: 200px;
-    padding: 36px 20px;
+    width: 240px;
+    height: auto;
+    padding: 16px;
+    flex-direction: column;
     text-align: center;
-    box-sizing: border-box;
+    justify-content: center;
   }
-  
-  .stat-value {
-    display: block;
-    font-weight: 700;
-    font-size: 32px;
-    background: linear-gradient(90deg, #0764da 0%, #3c8cfa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 6px;
-  }
-  
-  .stat-label {
-    font-size: 15px;
-    font-weight: 500;
-    color: #475569;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .impact-heading {
-      font-size: 24px;
-    }
-    .stat-card {
-      width: 160px;
-      padding: 28px 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .impact-heading {
-      font-size: 20px;
-    }
-    .impact-stats {
-      gap: 20px;
-    }
-  }
-  
+}

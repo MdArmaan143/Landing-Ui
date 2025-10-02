@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/HeroSection.css";
+import "../styles/Header.css"
 
 const HeroSection = () => {
   return (
@@ -42,7 +43,7 @@ const HeroSection = () => {
 
         {/* Book a call button */}
         <button className="book-btn">
-          <img src="/images/bookacall.png" alt="call" className="btn-icon" />
+          <img src="/images/bookacall.png" alt="call" className="btn-icon " />
           Book A Call
         </button>
       </div>

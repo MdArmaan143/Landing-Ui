@@ -6,28 +6,33 @@ const Impact = () => {
     <section className="impact-section">
       {/* Pill */}
       <div className="impact-pill">
-        <span className="dot"></span>
-        Our Impact
+        <div className="pill-inner">
+          <span className="dot"></span>
+          <span className="pill-text">Our Impact</span>
+        </div>
       </div>
 
-      {/* Headline */}
+      {/* Heading */}
       <h2 className="impact-heading">
         Delivering results for ambitious startups and founders
       </h2>
 
       {/* Stats Row */}
       <div className="impact-stats">
-        <div className="stat-card">
+        {/* 1st Box */}
+        <div className="stat-card first-card">
           <span className="stat-value">$15M+</span>
           <span className="stat-label">Client Funding</span>
         </div>
 
-        <div className="stat-card">
+        {/* 2nd Box */}
+        <div className="stat-card second-card">
           <span className="stat-value">50+</span>
           <span className="stat-label">Products Built</span>
         </div>
 
-        <div className="stat-card">
+        {/* 3rd Box */}
+        <div className="stat-card third-card">
           <span className="stat-value">5</span>
           <span className="stat-label">Acquisitions</span>
         </div>
