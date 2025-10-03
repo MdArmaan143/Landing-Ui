@@ -1,0 +1,122 @@
+/* FAQ Section Container */
+.faq-section {
+    width: 1540px;
+    height: 900px;
+    margin: 0 auto;
+    background: #f3f7f8;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding-top: 85px;
+    text-align: center;
+  }
+  
+  /* ===== Pill Styles ===== */
+  .faq-pill {
+    width: 90px;
+    height: 44px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #cee3ff 0%, #c5f4ff 100%);
+    border-radius: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .faq-pill-inner {
+    width: 82px;
+    height: 36px;
+    background: #ffffff;
+    border-radius: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  
+  .faq-dot {
+    width: 8px;
+    height: 8px;
+    background: #0764daa8;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .faq-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /* ===== Title ===== */
+  .faq-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #202020;
+    margin-top: 35px;
+    line-height: 31px;
+  }
+  
+  .faq-subheading {
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+    margin-top: 10px;
+    line-height: 31px;
+  }
+  
+  /* ===== FAQ Boxes ===== */
+  .faq-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .faq-box {
+    width: 919px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 11px 0px #0000000f;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+  
+  .faq-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
+    line-height: 31px;
+    text-align: left;
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+    color: #000000;
+  }
+  
+  .faq-answer-box {
+    width: 883px;
+    margin: 0 auto 20px auto;
+    border: 1px dashed #e3e3e3;
+    border-radius: 10px;
+    padding: 12px 20px;
+  }
+  
+  .faq-answer {
+    font-size: 14px;
+    line-height: 28px;
+    color: #474545;
+    text-align: left;
+  }
+  

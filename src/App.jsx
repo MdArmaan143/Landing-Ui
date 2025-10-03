@@ -7,6 +7,7 @@ import LaunchPad from './components/LaunchPad';
 import OurProcess from './components/OurProcess';
 import OurWork from './components/OurWork';
 import Footer from './components/Footer';
+import Faq from './components/Faq';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <OurWork/>
     <LaunchPad/>
     <OurProcess/>
+    <Faq/>
     <Footer/>
     </div>
   );
