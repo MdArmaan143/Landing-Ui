@@ -40,10 +40,15 @@ const OurWork = () => {
               <div className="ourwork-card-img-container">
                 <img src={card.img} alt={card.title} className="ourwork-card-img" />
               </div>
-              <div className="ourwork-card-footer">
-                <span className="ourwork-card-title">{card.title}</span>
-                <span className="ourwork-arrow">↗</span>
-              </div>
+
+              <a href="#" target="_blank" className="ourwork-card-link">
+                <div className="ourwork-card-footer">
+                  <span className="ourwork-card-title">{card.title}</span>
+                  <span className="ourwork-arrow">↗</span>
+                </div>
+              </a>
+
+
             </div>
           ))}
         </div>

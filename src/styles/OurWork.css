@@ -113,31 +113,36 @@
     display: block;
   }
   
-  .ourwork-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 12px;
-    margin-top: 4px;
-  }
-  
-  .ourwork-card-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: #404040;
-  }
-  
-  .ourwork-arrow {
+/* Existing footer styles */
+.ourwork-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  margin-top: 4px;
+}
 
-  width: 22.152612627650004;
-height: 22.152612627650004;
-angle: -49.44 deg;
-opacity: 1;
-top: 269px;
-left: 345px;
+/* Link style: underline hatao */
+.ourwork-card-link {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* keep text color same */
+  display: block;          /* makes whole div clickable */
+}
 
-  }
-  
+/* Existing text style */
+.ourwork-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #404040;
+}
+
+/* Arrow style */
+.ourwork-arrow {
+  width: 22.15px;
+  height: 22.15px;
+  /* angle, top, left remove because unnecessary for inline span */
+}
+
   /* Animation */
   @keyframes moveLeftRight {
     0% {
