@@ -9,6 +9,7 @@ import OurWork from './components/OurWork';
 import Footer from './components/Footer';
 import Faq from './components/Faq';
 import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials'
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <OurWork/>
     <LaunchPad/>
     <OurProcess/>
+    <Testimonials/>
     <Pricing/>
     <Faq/>
     <Footer/>
