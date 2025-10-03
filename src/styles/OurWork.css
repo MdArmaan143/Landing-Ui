@@ -1,0 +1,150 @@
+/* Container */
+.ourwork-container {
+    width: 100%;
+    /* width: 1440px; */
+    height: 672px;
+    background: #f3f7f8;
+    margin: 0 auto;
+    padding-top: 85px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Badge */
+  .ourwork-badge {
+    width: 151px;
+    height: 44px;
+    margin: 0 auto;
+    border-radius: 31px;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #cee3ff 0%, #c5f4ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .badge-inner {
+    width: 143px;
+    height: 36px;
+    border-radius: 83px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    gap: 6px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: #0764daa8;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .badge-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /* Headings */
+  .ourwork-heading {
+    margin-top: 28px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #202020;
+    text-align: center;
+  }
+  
+  .ourwork-subheading {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+    text-align: center;
+    max-width: 604px;
+    line-height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Cards Wrapper */
+  .ourwork-cards-wrapper {
+    width: 2077px;
+    height: 316px;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ourwork-cards-moving {
+    display: flex;
+    gap: 43px;
+    animation: moveLeftRight 15s linear infinite;
+  }
+  
+  .ourwork-card {
+    width: 381px;
+    height: 316px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0px 2px 21px 0px #0000001a;
+    flex-shrink: 0;
+  }
+  
+  .ourwork-card-img-container {
+    width: 364px;
+    height: 258px;
+    margin: 7px auto 0;
+    border-radius: 10px;
+    background: #b9ddfb;
+    overflow: hidden;
+  }
+  
+  .ourwork-card-img {
+    width: 351px;
+    height: 246px;
+    margin: 6px auto 0;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .ourwork-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    margin-top: 4px;
+  }
+  
+  .ourwork-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
+  }
+  
+  .ourwork-arrow {
+
+  width: 22.152612627650004;
+height: 22.152612627650004;
+angle: -49.44 deg;
+opacity: 1;
+top: 269px;
+left: 345px;
+
+  }
+  
+  /* Animation */
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
