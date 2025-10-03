@@ -56,13 +56,22 @@ const HeroSection = () => {
         <img src="/images/line-left.svg" alt="" className="bottom-line bottom-left" />
         <img src="/images/line-right.svg" alt="" className="bottom-line bottom-right" />
 
-        <div className="trusted-logos">
-          <img src="/images/logo-qualcomm.png" alt="Qualcomm" />
-          <img src="/images/logo-walmart.png" alt="Walmart" />
-          <img src="/images/logo-amazon.png" alt="Amazon" />
-          <img src="/images/logo-adobe.png" alt="Adobe" />
-          <img src="/images/logo-deloitte.png" alt="Deloitte" />
-        </div>
+        <div className="trusted-logos-wrapper">
+  <div className="trusted-logos">
+    <img src="/images/logo-qualcomm.png" alt="Qualcomm" />
+    <img src="/images/logo-walmart.png" alt="Walmart" />
+    <img src="/images/logo-amazon.png" alt="Amazon" />
+    <img src="/images/logo-adobe.png" alt="Adobe" />
+    <img src="/images/logo-deloitte.png" alt="Deloitte" />
+  
+    <img src="/images/logo-qualcomm.png" alt="Qualcomm" />
+    <img src="/images/logo-walmart.png" alt="Walmart" />
+    <img src="/images/logo-amazon.png" alt="Amazon" />
+    <img src="/images/logo-adobe.png" alt="Adobe" />
+    <img src="/images/logo-deloitte.png" alt="Deloitte" />
+  </div>
+</div>
+
       </div>
     </section>
   );

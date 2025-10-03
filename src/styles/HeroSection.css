@@ -145,17 +145,35 @@
   .bottom-left  { left: 0; }
   .bottom-right { right: 0; }
   
+  .trusted-logos-wrapper {
+    overflow: hidden;
+    width: 80%;             /* wrapper ki width fix */
+    margin: 0 auto;         /* center karne ke liye */
+    position: relative;
+  }
+  
   .trusted-logos {
     display: flex;
-    justify-content: center;
     gap: 60px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    animation: slide 10s linear infinite;
   }
+  
   .trusted-logos img {
     height: 28px;
     opacity: 0.8;
     filter: grayscale(40%);
   }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);      /* right ke 80% edge se start */
+    }
+    100% {
+      transform: translateX(-20%);    /* left ke 80% par rukega */
+    }
+  }
+  
   
   /* Responsive */
   @media (max-width: 1024px) {
