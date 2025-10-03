@@ -7,12 +7,12 @@ const OurWork = () => {
     { id: 2, title: "FinSub", img: "/images/Finesub.png" },
     { id: 3, title: "FitAI", img: "/images/FitAi.png" },
     { id: 4, title: "FitAI", img: "/images/BillFlows.png" },
-    { id: 1, title: "BillFlow", img: "/images/BillFlows.png" },
-    { id: 2, title: "FinSub", img: "/images/Finesub.png" },
-    { id: 3, title: "FitAI", img: "/images/FitAi.png" },
-    { id: 4, title: "FitAI", img: "/images/BillFlows.png" },
-    { id: 1, title: "BillFlow", img: "/images/BillFlows.png" },
-    { id: 2, title: "FinSub", img: "/images/Finesub.png" },
+    { id: 5, title: "BillFlow", img: "/images/BillFlows.png" },
+    { id: 6, title: "FinSub", img: "/images/Finesub.png" },
+    { id: 7, title: "FitAI", img: "/images/FitAi.png" },
+    { id: 8, title: "FitAI", img: "/images/BillFlows.png" },
+    { id: 9, title: "BillFlow", img: "/images/BillFlows.png" },
+    { id: 10, title: "FinSub", img: "/images/Finesub.png" },
   ];
 
   return (
