@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/HeroSection.css";
 import "../styles/Header.css"
 
-const HeroSection = () => {
+const HeroSection= () => {
   return (
     <section className="hero-container">
       {/* Background curved lines */}
