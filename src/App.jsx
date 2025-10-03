@@ -8,6 +8,7 @@ import OurProcess from './components/OurProcess';
 import OurWork from './components/OurWork';
 import Footer from './components/Footer';
 import Faq from './components/Faq';
+import Pricing from './components/Pricing';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <OurWork/>
     <LaunchPad/>
     <OurProcess/>
+    <Pricing/>
     <Faq/>
     <Footer/>
     </div>

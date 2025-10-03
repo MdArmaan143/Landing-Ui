@@ -1,0 +1,342 @@
+/* ================================
+   Pricing Section
+===================================*/
+.pricing-section {
+    position: relative;
+    margin-top: 96px;
+    background-color: #f3f7f8;
+    padding: 96px 0;
+  }
+  
+  .pricing-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    padding: 0 16px;
+  }
+  
+  @media (min-width: 640px) {
+    .pricing-container {
+      padding: 0 24px;
+    }
+  }
+  
+  /* .section-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e8f4ff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+  } */
+  
+  .pricing-main-title {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #202020;
+  }
+  
+  @media (min-width: 640px) {
+    .pricing-main-title {
+      font-size: 32px;
+    }
+  }
+  
+  .pricing-main-description {
+    margin-top: 16px;
+    max-width: 576px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #525252;
+  }
+  
+  .pricing-grid {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 1280px;
+  }
+  
+  @media (min-width: 1024px) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+  }
+  
+  /* ================================
+     Pricing Card
+  ===================================*/
+  .pricing-card-wrapper {
+    position: relative;
+  }
+  
+  .pricing-badge {
+    position: absolute;
+    width: 225px;
+    height: 570px;
+    z-index: 1;
+    right: 0;
+    top: -48px;
+    border-radius: 61px 19px 35px 35px;
+    background: linear-gradient(179.68deg, #0660d7 0.28%, #0d88f6 6.3%);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    box-shadow: 0px 2px 13px rgba(75, 81, 99, 0.16);
+    padding: 20px 48px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .pricing-card-outer {
+    position: relative;
+    z-index: 10;
+    border-radius: 24px;
+    padding: 6px;
+    background: linear-gradient(to bottom right, #ebeff0, #ebeff0);
+    box-shadow: 0 10px 24px rgba(15, 71, 166, 0.12);
+  }
+  
+  .pricing-card-outer.highlight {
+    background: linear-gradient(to bottom right, #b5deff, #c2e4ff);
+    box-shadow: 0 18px 40px rgba(78, 133, 255, 0.25);
+  }
+  
+  .pricing-card-inner {
+    height: 100%;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: #f5f5f5;
+  }
+  
+  .pricing-card-inner.highlight {
+    background-color: white;
+  }
+  
+  .pricing-card-content {
+    padding: 24px;
+  }
+  
+  @media (min-width: 640px) {
+    .pricing-card-content {
+      padding: 32px;
+    }
+  }
+  
+  .pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  
+  .pricing-icon {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f6f9ff;
+    color: #000;
+    box-shadow: 0 10px 18px rgba(21, 63, 171, 0.15);
+  }
+  
+  .pricing-icon .icon {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .billing-note {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7c7c7c;
+  }
+  
+  .pricing-title-section {
+    margin-bottom: 16px;
+  }
+  
+  .pricing-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+  }
+  
+  .pricing-subtitle {
+    font-size: 15px;
+    color: #525252;
+  }
+  
+  .pricing-price-section {
+    margin-top: 16px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    color: #363a47;
+  }
+  
+  .pricing-price {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+  
+  .pricing-suffix {
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #363a47;
+  }
+  
+  .pricing-description {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #525252;
+  }
+  
+  .pricing-button-wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pricing-button {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px dashed #9c9c9c;
+    background-color: white;
+    color: black;
+  }
+  
+  .pricing-button:hover {
+    background-color: #f9faff;
+  }
+  
+  .pricing-button.highlight {
+    border: 2px solid #9cc6ff;
+    background: linear-gradient(to bottom, #0f93ff, #003bb9);
+    color: white;
+    box-shadow: 0 20px 40px rgba(15, 76, 190, 0.25);
+  }
+  
+  .pricing-button.highlight:hover {
+    box-shadow: 0 28px 48px rgba(15, 76, 190, 0.3);
+  }
+  
+  /* ================================
+     Features Section
+  ===================================*/
+  .pricing-features-section {
+    margin-top: 32px;
+    border: 1px solid #d9d9d9;
+    border-radius: 44px 44px 22px 22px;
+    padding-top: 12px;
+  }
+  
+  .features-heading {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+  }
+  
+  .features-list {
+    padding: 24px;
+  }
+   /* Badge */
+   .impact-pill11 {
+    width: 151px;
+    height: 44px;
+    border-radius: 31px;
+    
+    background: #f2f2f2;
+    margin: 0 auto 24px auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-image: linear-gradient(90deg, #cee3ff 0%, #c5f4ff 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+  }
+  
+  .pill-inner11 {
+    width: 143px;
+    height: 36px;
+    border-radius: 83px;
+    background: #ffffff;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .dot11 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0764daa8;
+  }
+  
+  .pill-text11 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 100%;
+  }
+  
+  
+  @media (min-width: 640px) {
+    .features-list {
+      padding: 32px;
+    }
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .feature-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .feature-check {
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+    color: #00b100;
+    flex-shrink: 0;
+  }
+  
+  .feature-text {
+    font-size: 14px;
+    line-height: 28px;
+    color: #525252;
+  }
+  
